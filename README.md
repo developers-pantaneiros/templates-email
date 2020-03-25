@@ -1,2 +1,2 @@
 # templates-email
- :envelope: a repository of email templates developed by the team
+ :envelope: A repository of email templates developed by the team
