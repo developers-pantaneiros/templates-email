@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Responsive HTML Email</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            min-width: 100% !important;
+        }
+
+        img {
+            height: auto;
+        }
+
+        .content {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .header {
+            padding: 40px 30px 20px 30px;
+        }
+
+        .innerpadding {
+            padding: 30px 30px 30px 30px;
+        }
+
+        .borderbottom {
+            border-bottom: 1px solid #f2eeed;
+        }
+
+        .subhead {
+            font-size: 15px;
+            color: #ffffff;
+            font-family: sans-serif;
+            letter-spacing: 10px;
+        }
+
+        .h1,
+        .h2,
+        .bodycopy {
+            color: #000000;
+            font-family: sans-serif;
+        }
+
+        .h1 {
+            font-size: 33px;
+            line-height: 38px;
+            font-weight: bold;
+        }
+
+        .h2 {
+            padding: 0 0 15px 0;
+            font-size: 24px;
+            line-height: 28px;
+            font-weight: bold;
+        }
+
+        .bodycopy {
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        .button {
+            text-align: center;
+            font-size: 18px;
+            font-family: sans-serif;
+            font-weight: bold;
+            padding: 0 30px 0 30px;
+        }
+
+        .button a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .footer {
+            padding: 20px 30px 15px 30px;
+        }
+
+        .footercopy {
+            font-family: sans-serif;
+            font-size: 14px;
+            color: #ffffff;
+        }
+
+        .footercopy a {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        @media only screen and (max-width: 550px),
+        screen and (max-device-width: 550px) {
+            body[yahoo] .hide {
+                display: none !important;
+            }
+
+            body[yahoo] .buttonwrapper {
+                background-color: transparent !important;
+            }
+
+            body[yahoo] .button {
+                padding: 0px !important;
+            }
+
+            body[yahoo] .button a {
+                background-color: #e05443;
+                padding: 15px 15px 13px !important;
+            }
+        }
+
+        /*@media only screen and (min-device-width: 601px) {
+    .content {width: 600px !important;}
+    .col425 {width: 425px!important;}
+    .col380 {width: 380px!important;}
+    }*/
+    </style>
+</head>
+
+<body yahoo bgcolor="#f6f8f1">
+    <div style="display:none">
+        <p style="color:#fff;background:#fff;text-align:center;">A conta acaba de solicitar recuperação de senha.</p>
+    </div>
+    <table style="padding: 75px 0;" width="100%" bgcolor="#f8f8f7" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td>
+                <table style="border-radius:6px 6px 0px 0px;" bgcolor="#ffffff" class="content" align="center"
+                    cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <td style="border-radius:6px 6px 0px 0px;" bgcolor="#4990e2" class="header borderbottom">
+                            <table class="col380" align="center" border="0" cellpadding="0" cellspacing="0"
+                                style="width: 100%; max-width: 380px;">
+                                <tr>
+                                    <td align="center" height="70">
+                                        <img class="fix" src="https://avatars2.githubusercontent.com/u/59655871?v=4" width="100" height="100" border="0"
+                                            alt="" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="innerpadding">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td class="h2" style="text-align: center;">
+                                        Redefinição de senha
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="bodycopy">
+                                        <br><br><br>
+                                        Clique no botão abaixo para redefinir a senha de login no app com sua conta %EMAIL%.
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0 30px 30px 30px;" class="bodycopy borderbottom">
+                            Redefina a senha no botão abaixo:
+                            <br><br><br>
+                            <div style="text-align: center;"><a
+                                    style="background: #4990e2;padding: 14px 25px;color: #fff;text-decoration: none;text-transform: uppercase;border-radius: 30px;font-weight: bold;"
+                                    href="%LINK%">Redefinir Senha</a>
+                            </div>
+                            <br>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="innerpadding bodycopy">
+                            Caso tenha alguma dúvida sobre como proceder com a redefinição da senha, você pode
+                            também entrar em contato conosco no developerspantaneiros@gmail.com
+                            <br><br>
+                            <b>Atenciosamente,</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-radius:0px 0px 6px 6px;" class="footer" bgcolor="#4990e2">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td align="center" class="footercopy">
+                                        <a href="https://server-dd84f.firebaseapp.com/" style="color: #fff; text-decoration: none;">Equipe Developers Pantaneiros &reg;<br /></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
